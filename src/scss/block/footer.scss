@@ -1,0 +1,45 @@
+.footer {
+	flex-shrink: 0;
+	padding: 26px 0 38px 0;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		@include phone {
+			align-items: baseline;
+		}
+
+	}
+
+	&__left {
+		@include phone {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__logo {
+		margin-right: 32px;
+		@include phone {
+			margin-right: 0;
+		}
+	}
+
+	&__phones {
+		@include phone {
+			width: 100%;
+			margin-top: 24px;
+		}
+		@include phoneES {
+			display: none;
+		}
+	}
+
+	&__phone {
+		&+& {
+			margin-left: 32px;
+		}
+	}
+}

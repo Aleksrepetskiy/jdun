@@ -1,0 +1,290 @@
+@import "normalize";
+@import "vars";
+* {
+	line-height: 1.6em;
+}
+html {
+	font-size: 16px;
+}
+.html-over {
+    overflow: hidden;
+}
+body {
+	font-family: $OS;
+	color: $default_color;
+	min-width: 360px;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 0 auto;
+}
+.wrapper {
+	max-width: 1484px;
+	padding: 0 24px;
+	margin: 0 auto;
+}
+.bold {
+	font-weight: 600;
+}
+.bolder {
+	font-weight: 700;
+}
+.ff-pd {
+	font-family: $PD;
+}
+h1, .h1 {
+	font-size: 48px;
+	line-height: 1.2em;
+	font-family: $PD;
+	margin-bottom: 32px;
+	@include tablet {
+		font-size: 30px;
+	}
+}
+h2, .h2 {
+	font-size: 30px;
+	line-height: 1.2em;
+	font-family: $PD;
+	margin-bottom: 16px;
+	@include tablet {
+		font-size: 26px;
+	}
+}
+h3, .h3 {
+	font-size: 24px;
+	line-height: 1.2em;
+	font-family: $PD;
+	margin-bottom: 10px;
+	@include tablet {
+		font-size: 20px;
+	}
+}
+h4, .h4 {
+	font-size: 18px;
+	line-height: 1.2em;
+	font-family: $PD;
+}
+p {
+	margin-bottom: 24px;
+
+}
+.w-full {
+	width: 100%;
+}
+.weight-700 {
+	font-weight: 700;
+}
+.weight-800 {
+	font-weight: 800;
+}
+.text-center {
+	text-align: center;
+}
+.fs-30 {
+	font-size: 30px;
+}
+.fs-18 {
+	font-size: 18px;
+}
+.fs-14 {
+	font-size: 14px;
+}
+.fs-12 {
+	font-size: 12px;
+}
+.radius{
+	border-radius: 12px;
+}
+.border-green {
+	border: 1px solid #8CC6BF;
+}
+.m-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.mb-0 {
+	margin-bottom: 0;
+}
+.ml-2 {
+	margin-left: 2px;
+}
+.mr-4 {
+	margin-right: 4px;
+}
+.mb-4 {
+	margin-bottom: 4px;
+}
+.mb-8 {
+	margin-bottom: 8px;
+}
+.mr-8 {
+	margin-right: 8px;
+}
+.mb-12 {
+	margin-bottom: 12px;
+}
+.mr-16 {
+	margin-right: 16px;
+}
+.mb-16 {
+margin-bottom: 16px;
+}
+.mt-16 {
+margin-top: 16px;
+}
+.mt-24 {
+	margin-top: 24px;
+}
+.mb-24 {
+	margin-bottom: 24px;
+}
+.mr-24 {
+	margin-right: 24px;
+}
+.mb-32 {
+	margin-bottom: 32px;
+}
+.mb-36 {
+	margin-bottom: 36px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+.mb-80 {
+	margin-bottom: 80px;
+}
+
+.bg-d-green {
+	background-color: #062A30;
+}
+
+.color-grey {
+	color: #838E9B;
+}
+.fill-grey {
+	fill: #838E9B;
+}
+.color-green {
+	color: #8CC6BF;
+}
+.fill-green {
+	fill: #8CC6BF;
+}
+.color-db {
+	color: $dark_blue;
+}
+.fill-db {
+	fill: $dark_blue;
+}
+.color-black {
+	color: #000;
+}
+.color-blue {
+	color: #6E97FF;
+}
+.color-white {
+	color: #FFFFFF;
+}
+.fill-white {
+	fill: #FFFFFF;
+}
+.sprite {
+	display: block
+}
+.up {
+	position: fixed;
+	cursor: pointer;
+	right: 24px;
+	bottom: 24px;
+	opacity: 0.8;
+	display: inline-flex;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	font-size: 14px;
+	align-items: center;
+	font-weight: bold;
+	color: $dark_blue;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 2px rgba(84, 94, 144, 0.12), 0px 2px 6px rgba(84, 94, 144, 0.1);
+	border-radius: 4px;
+	z-index: 1;
+	.sprite {
+		fill: $dark_blue;
+		margin-left: 8px;
+	}
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+.fade {
+	animation-name: fadein;
+	animation-duration: 1.5s;
+}
+.box-grey {
+	background: #F7F6FB;
+	padding: 40px 0;
+	@include phone {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+	&__wrapper {
+		max-width: 1064px;
+		margin: 0 auto;
+		padding: 0 16px
+
+	}
+}
+.box-grey-small {
+	background: #F7F6FB;
+	.h4 {
+		font-weight: bold;
+	}
+}
+.box-white {
+	background-color: #fff;
+	border: 1px solid #DCDBF0;
+	border-radius: 4px;
+}
+.flex {
+	display: flex;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.flex-inline {
+	display: inline-flex;
+}
+.items-center {
+	align-items: center
+}
+.justify-between {
+	justify-content: space-between;
+}
+.max-1030 {
+	max-width: 1030px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+@import "block/forms.scss";
+@import "block/header.scss";
+@import "block/footer.scss";
+@import "block/popup.scss";
+@import "block/swiper.scss";
+@import "block/news.scss";
+@import "block/index.scss";
+@import "block/table.scss";
+@import "block/breadcrumbs.scss";
+@import "block/share.scss";
+@import "block/members.scss";
+@import "block/map.scss";
+@import "block/pagination.scss";
+@import "block/materials.scss";
+@import "block/monitoring.scss";

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ua-Ua">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ассоциация</title>
+	<!--FONTS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+		rel="stylesheet" />
+	<!--CSS-->
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/css/style.min.css" />
+</head>
+
+<body>
+	<!--[if lt IE8]>
+		<p class="browsehappy">Ваш браузер <strong>устарел</strong>.Пожалуйста < href="http://browsehappy.com/"обновите</a> его.</p>
+	<![endif]-->
+	@@include('includes/header.html')
+	<main class="main">
+		<div class="wrapper">
+			@@include('includes/breadcrumbs.html')
+			<h1 class="h1">Учасники Асоціації</h1>
+			<section class="members box-grey box-grey--members">
+				<div class="members__inner">
+					<form class="mb-24" id="form_member" action="" method="get">
+						<div class="members__form">
+							<div class="b-input">
+								<input class="input members__input-search" type="text" name="member" placeholder="Шукати за назвою" value="">
+								<button class="members__search" type="submit">
+									<svg class="sprite sprite-search" width="36" height="36">
+										<use
+											xlink:href="/img/sprite/sprite.svg#search"
+										></use>
+									</svg>
+								</button>
+							</div>
+							<div class="b-select">
+								<select name="region" class="select" id="members_region_select">
+									<option value="">Вся Україна</option><option value="м. Київ">м. Київ</option><option value="Автономна Республіка Крим">Автономна Республіка Крим</option><option value="Вінницька область">Вінницька область</option><option value="Волинська область">Волинська область</option><option value="Дніпропетровська область">Дніпропетровська область</option><option value="Донецька область">Донецька область</option><option value="Житомирська область">Житомирська область</option><option value="Закарпатська область">Закарпатська область</option><option value="Запорізька область">Запорізька область</option><option value="Івано-Франківська область">Івано-Франківська область</option><option value="Київська область">Київська область</option><option value="Кіровоградська область">Кіровоградська область</option><option value="Луганська область">Луганська область</option><option value="Львівська область">Львівська область</option><option value="Миколаївська область">Миколаївська область</option><option value="Одеська область">Одеська область</option><option value="Полтавська область">Полтавська область</option><option value="Рівненська область">Рівненська область</option><option value="Сумська область">Сумська область</option><option value="Тернопільська область">Тернопільська область</option><option value="Харківська область">Харківська область</option><option value="Херсонська область">Херсонська область</option><option value="Хмельницька область">Хмельницька область</option><option value="Черкаська область">Черкаська область</option><option value="Чернівецька область">Чернівецька область</option><option value="Чернігівська область">Чернігівська область</option><option value="м. Севастополь">м. Севастополь</option>                        </select>
+							</div>
+						</div>
+					</form>
+					<div class="members__table mb-24">
+						<table class="table">
+							<tbody>
+								<tr class="tr">
+									<th class="th">№</th>
+									<th class="th">Найменування</th>
+									<th class="th">Вебсайт</th>
+									<th class="th">Код ЕДРПОУ</th>
+									<th class="th">Статус членства</th>
+									<th class="th">Примітки</th>
+								</tr>
+								<tr class="tr">
+									<td class="td">1</td>
+									<td class="td">
+										<div class="flex flex-aic">
+											<img src="/img/logo.svg" class="members__logo" alt="logo">
+											ПТ ЗТ "Скарбниця"
+										</div>
+									</td>
+									<td class="td">
+										<a href="scarb.com.ua" target="_blank" class="color-blue">scarb.com.ua</a>
+									</td>
+									<td class="td">18900650</td>
+									<td class="td">Найменування</td>
+									<td class="td">Фінансовий кредит ломбарду забезпечується заставою майна.</td>
+								</tr>
+								<tr class="tr">
+									<td class="td">1</td>
+									<td class="td">
+										<div class="flex flex-aic">
+											<img src="/img/logo.svg" class="members__logo" alt="logo">
+											ПТ ЗТ "Скарбниця"
+										</div>
+									</td>
+									<td class="td">
+										<a href="scarb.com.ua" target="_blank" class="color-blue">scarb.com.ua</a>
+									</td>
+									<td class="td">18900650</td>
+									<td class="td">Найменування</td>
+									<td class="td">Фінансовий кредит ломбарду забезпечується заставою майна.</td>
+								</tr>
+								<tr class="tr">
+									<td class="td">1</td>
+									<td class="td">
+										<div class="flex flex-aic">
+											ПТ ЗТ "Скарбниця"
+										</div>
+									</td>
+									<td class="td">
+										<a href="scarb.com.ua" target="_blank" class="color-blue">scarb.com.ua</a>
+									</td>
+									<td class="td">18900650</td>
+									<td class="td">Найменування</td>
+									<td class="td">Фінансовий кредит ломбарду забезпечується заставою майна.</td>
+								</tr>
+								<tr class="tr">
+									<td class="td">1</td>
+									<td class="td">
+										<div class="flex flex-aic">
+											<img src="/img/logo.svg" class="members__logo" alt="logo">
+											ПТ ЗТ "Скарбниця"
+										</div>
+									</td>
+									<td class="td">
+										<a href="scarb.com.ua" target="_blank" class="color-blue">scarb.com.ua</a>
+									</td>
+									<td class="td">18900650</td>
+									<td class="td">Найменування</td>
+									<td class="td">Фінансовий кредит ломбарду забезпечується заставою майна.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="text-center">
+						<a href="#" class="btn-border">показати ще</a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	@@include('includes/footer.html')
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>

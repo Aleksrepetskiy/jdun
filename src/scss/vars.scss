@@ -1,0 +1,45 @@
+$OS: 'Open Sans', sans-serif;
+$PD: 'Playfair Display', serif;
+
+//COLOR
+
+$default_color: #292D32;
+$yellow: #FFCE3A;
+$yellow2: #FFF7DC;
+$blue: #4657AE;
+$dark_blue: #292D32;
+$light_blue: #6E97FF;
+$light_blue2: #F1EFF8;
+$white: #ffffff;
+$black: #000000;
+$dark: #111111;
+$grey: #F7F6FB;
+
+
+// Breakpoints
+
+@mixin desktopHD {
+    @media (min-width: 1201px){
+        @content;
+  	}
+}
+@mixin desktop {
+    @media (max-width: 1199px){
+        @content;
+  	}
+}
+@mixin tablet {
+    @media (max-width: 991px){
+        @content;
+  	}
+}
+@mixin phone {
+    @media (max-width: 767px){
+        @content;
+  	}
+}
+@mixin phoneES {
+    @media (max-width: 479px){
+        @content;
+  	}
+}
