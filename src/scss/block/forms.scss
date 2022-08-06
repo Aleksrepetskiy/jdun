@@ -109,7 +109,6 @@
     height: 48px;
     line-height: 48px;
     text-align: center;
-    text-transform: uppercase;
     color: #626cc3;
     font-weight: 700;
     font-size: 14px;
@@ -118,17 +117,27 @@
 	font-weight: bold;
 	font-size: 14px;
 	color: $blue;
-	text-transform: uppercase;
 }
-.btn-border-green {
+.btn-border {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	height: 48px;
-	border: 1px solid #8CC6BF;
-	color: #8CC6BF;
 	border-radius: 30px;
 	padding: 2px 16px;
+	flex-shrink: 0;
+
+}
+.btn-border-green {
+	border: 1px solid #8CC6BF;
+	color: #8CC6BF;
+}
+
+.btn-border-orange {
+	border: 1px solid #F95738;
+	color: #F95738;
+	background: #FFFFFF;
+	
 }
 
 .btn {

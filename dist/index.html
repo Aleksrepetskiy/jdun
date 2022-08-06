@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>ассоциация</title>
+	<title>Ждун</title>
 	<!--FONTS-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,13 +35,22 @@
             <nav class="menu">
                 <div class="menu__hamburger">
                     <div class="hamburger">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+						<svg class="sprite fill-white" width="24" height="24">
+							<use xlink:href="/img/sprite/sprite.svg#menu"></use>
+						</svg>
                     </div>
                 </div>
                 <div class="menu__box">
-                    <div class="menu__overlay"></div>
+					<div class="menu__head">
+						<div class="header__logo">
+							<img class="logo" src="/img/logo.svg" alt="logo" />
+						</div>
+						<div class="menu__close">
+							<svg class="sprite fill-white" width="24" height="24">
+								<use xlink:href="/img/sprite/sprite.svg#close"></use>
+							</svg>
+						</div>
+					</div>
                     <ul class="menu__list">
                         <li class="menu__item">
 							<a href="#" class="menu__link">Готель</a>
@@ -61,6 +70,20 @@
                         <li class="menu__item">
 							<a href="#" class="menu__link">Контакти</a>
                         </li>
+						<li class="menu__footer">
+							<div class="languages">
+								<span class="languages__btn">UA</span>
+								<div class="languages__dropdown">
+									<a class="languages__btn" href="#" hreflang="eng">ENG</a>
+								</div>
+								<svg class="sprite fill-green ml-4" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#ad"></use>
+								</svg>
+							</div>
+							<a href="#" class="btn-border btn-border-green mr-16 btn-video"><svg class="sprite fill-green mr-8" width="24" height="24">
+								<use xlink:href="/img/sprite/sprite.svg#video"></use>
+							</svg>Веб-камера</a>
+						</li>
                     </ul>
                 </div>
             </nav>
@@ -75,7 +98,7 @@
 					<use xlink:href="/img/sprite/sprite.svg#ad"></use>
 				</svg>
 			</div>
-			<a href="#" class="btn-border-green mr-16"><svg class="sprite fill-green mr-8" width="24" height="24">
+			<a href="#" class="btn-border btn-border-green mr-16 btn-video"><svg class="sprite fill-green mr-8" width="24" height="24">
 				<use xlink:href="/img/sprite/sprite.svg#video"></use>
 			</svg>Веб-камера</a>
 			<a href="#" class="btn btn-orange js-open" data-attr=".popup__book">Бронювати</a>
@@ -84,6 +107,109 @@
 </header>
 
 	<main class="main main--index" style="background-image: url(./img/bg-index.jpeg);">
+		<div class="wrapper">
+			<div class="index__title">Відпочинок у Закарпатті</div>
+			<div class="index-tile color-white">
+				<div class="index-tile__gallery" style="background-image: url(./img/bg_gallery.jpg);">
+					<a href="#" class="btn-border btn-border-orange">
+						<svg class="sprite fill-orange mr-8" width="24" height="24">
+							<use xlink:href="/img/sprite/sprite.svg#element-3"></use>
+						</svg>Дивитись галарею
+					</a>
+				</div>
+				<div class="index-tile__citchen" style="background-color: #0B0A11;">
+					<div class="index-tile__citchen-description" >
+						<svg class="sprite fill-white mb-8 m-auto" width="100" height="100">
+							<use xlink:href="/img/sprite/sprite.svg#eat"></use>
+						</svg>
+						<h3 class="text-center">Закарпатська кухня</h3>
+						<div class="text-center mb-32">· Ресторан · Гриль-бар «Корчма»</div>
+						<a href="#" class="btn-border btn-border-orange">
+							<svg class="sprite fill-orange mr-8" width="24" height="24">
+								<use xlink:href="/img/sprite/sprite.svg#clipboard-text"></use>
+							</svg>Дивитись меню
+						</a>
+					</div>
+					<div class="index-tile__citchen-img" style="background-image: url(./img/bg_citchen.jpg);"></div>
+				</div>
+				<div class="index-tile__children" style="background-color: #678683;">
+					<svg class="sprite fill-white mb-8 m-auto" width="100" height="100">
+						<use xlink:href="/img/sprite/sprite.svg#children"></use>
+					</svg>
+					<h3 class="text-center">Дитячий майданчик</h3>
+					<div class="text-center">· Ресторан · Гриль-бар «Корчма»</div>
+				</div>
+				<div class="index-tile__spa" style="background: #062A30">
+					<div class="index-tile__spa-description">
+						<svg class="sprite fill-white mb-8 m-auto" width="100" height="100">
+							<use xlink:href="/img/sprite/sprite.svg#bath2"></use>
+						</svg>
+						<h3 class="text-center">Спа - комплекс</h3>
+						<div class="text-center">· Лазня · Джакузі · Чан</div>
+					</div>
+					<div class="index-tile__spa-img" style="background-image: url(./img/bg_spa.jpg);"></div>
+				</div>
+			</div>
+			<div class="index__soc">
+				<div class="ratings">
+					<div class="ratings__item ratings__item--booking">
+						<div class="ratings__item--booking-num">
+							8.7
+						</div>
+						<div class="ratings__item--booking-description">
+							<img class="block" src="./img/icon/booking.svg" alt="booking">
+							<span class="ratings__item--booking-text">Блискуче</span> 
+						</div>
+					</div>
+					<div class="ratings__item">
+						<div class="ratings__logo">
+							<img class="block" src="./img/icon/google.svg" alt="booking">
+						</div>
+						<div class="ratings__num">
+							4.7
+						</div>
+						<div class="ratings__rewievs">
+							<img class="block" src="./img/icon/star_4.svg" alt="booking">
+							<div class="fs-12 lh-12">581 відгук</div>
+						</div>
+					</div>
+					<div class="ratings__item">
+						<div class="ratings__logo">
+							<img class="block" src="./img/icon/fs.svg" alt="booking">
+						</div>
+						<div class="ratings__num">
+							5.0				
+						</div>
+						<div class="ratings__rewievs">
+							<img class="block" src="./img/icon/star_5.svg" alt="booking">
+							<div class="fs-12 lh-12">61 відгук</div>				
+						</div>
+					</div>
+
+				</div>
+				<div>
+					<div class="shild">
+						<svg class="sprite fill-db mr-8" width="24" height="24">
+							<use xlink:href="/img/sprite/sprite.svg#parking"></use>
+						</svg>
+						Автостоянка
+					</div>
+					<div class="shild">
+						<svg class="sprite fill-db mr-8" width="24" height="24">
+							<use xlink:href="/img/sprite/sprite.svg#wifi"></use>
+						</svg>
+						WiFi
+					</div>
+					<div class="shild">
+						<svg class="sprite fill-db mr-8" width="24" height="24">
+							<use xlink:href="/img/sprite/sprite.svg#calendar"></use>
+						</svg>
+						Довгострокове перебування
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="bg-d-green benefits">
 			<div class="wrapper">
 				<h1 class="color-white">Оазис комфорту та затишку</h1>
@@ -118,10 +244,10 @@
 								</svg>Екскурсії та багато іншого.</div>
 						</div>
 						<div class="sentense__left">
-							<svg class="sprite fill-green" width="100" height="100">
+							<svg class="sprite fill-green bg-forest" width="100" height="100">
 								<use xlink:href="/img/sprite/sprite.svg#landscape"></use>
 							</svg>
-							<a href="#" class="btn-border-green mr-16"><svg class="sprite fill-green mr-8" width="24"
+							<a href="#" class="btn-border btn-border-green mr-16"><svg class="sprite fill-green mr-8" width="24"
 									height="24">
 									<use xlink:href="/img/sprite/sprite.svg#clipboard"></use>
 								</svg>Дивитись всі послугі</a>
@@ -134,7 +260,7 @@
 			<svg class="sprite fill-green m-auto mb-4" width="24" height="24">
 				<use xlink:href="/img/sprite/sprite.svg#crown"></use>
 			</svg>
-			<div class="weight-700 ff-pd fs-30 color-green text-center">Кожен гість для нас - VIP персона</div>
+			<div class="weight-700 ff-pd fs-30 color-green text-center lh-12">Кожен гість для нас - VIP персона</div>
 		</div>
 		<div class="index-rooms">
 			<div class="wrapper">
@@ -187,6 +313,32 @@
 								Холодильник
 							</div>
 						</div>
+						<div class="swiper main-swiper mb-24">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide3.jpg" alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide4.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
 						<div class="index-rooms__move">
 							<div class="flex">
 								<svg class="sprite fill-db mr-16" width="24" height="24">
@@ -246,6 +398,27 @@
 								Холодильник
 							</div>
 						</div>
+						<div class="swiper main-swiper mb-24">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
 						<div class="index-rooms__move">
 							<div class="flex">
 								<svg class="sprite fill-db mr-16" width="24" height="24">
@@ -286,6 +459,27 @@
 								</svg>
 								Холодильник
 							</div>
+						</div>
+						<div class="swiper main-swiper mb-24">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="main-swiper__box-img">
+										<img src="/img/slider/slide3.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
 						<div class="index-rooms__move">
 							<div class="flex">
@@ -346,6 +540,30 @@
 								Холодильник
 							</div>
 						</div>
+						<div class="swiper__container">
+							<div class="swiper main-swiper mb-24">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide1.jpg" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide2.jpg" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide3.jpg" alt="" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						
 						<div class="index-rooms__move">
 							<div class="flex">
 								<svg class="sprite fill-db mr-16" width="24" height="24">
@@ -435,9 +653,11 @@
 	</div>
 </div>
 
-<div class="up">Нагору<svg class="sprite" width="10" height="10">
-	<use xlink:href="/img/sprite/sprite.svg#arrow_up"></use>
-</svg></div>
+<div class="up">
+	<svg class="sprite fill-grey" width="24" height="24">
+		<use xlink:href="/img/sprite/sprite.svg#ad"></use>
+	</svg>
+</div>
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="/js/script.js"></script>

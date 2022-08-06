@@ -38,13 +38,22 @@
             <nav class="menu">
                 <div class="menu__hamburger">
                     <div class="hamburger">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+						<svg class="sprite fill-white" width="24" height="24">
+							<use xlink:href="/img/sprite/sprite.svg#menu"></use>
+						</svg>
                     </div>
                 </div>
                 <div class="menu__box">
-                    <div class="menu__overlay"></div>
+					<div class="menu__head">
+						<div class="header__logo">
+							<img class="logo" src="/img/logo.svg" alt="logo" />
+						</div>
+						<div class="menu__close">
+							<svg class="sprite fill-white" width="24" height="24">
+								<use xlink:href="/img/sprite/sprite.svg#close"></use>
+							</svg>
+						</div>
+					</div>
                     <ul class="menu__list">
                         <li class="menu__item">
 							<a href="#" class="menu__link">Готель</a>
@@ -64,6 +73,20 @@
                         <li class="menu__item">
 							<a href="#" class="menu__link">Контакти</a>
                         </li>
+						<li class="menu__footer">
+							<div class="languages">
+								<span class="languages__btn">UA</span>
+								<div class="languages__dropdown">
+									<a class="languages__btn" href="#" hreflang="eng">ENG</a>
+								</div>
+								<svg class="sprite fill-green ml-4" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#ad"></use>
+								</svg>
+							</div>
+							<a href="#" class="btn-border btn-border-green mr-16 btn-video"><svg class="sprite fill-green mr-8" width="24" height="24">
+								<use xlink:href="/img/sprite/sprite.svg#video"></use>
+							</svg>Веб-камера</a>
+						</li>
                     </ul>
                 </div>
             </nav>
@@ -78,7 +101,7 @@
 					<use xlink:href="/img/sprite/sprite.svg#ad"></use>
 				</svg>
 			</div>
-			<a href="#" class="btn-border-green mr-16"><svg class="sprite fill-green mr-8" width="24" height="24">
+			<a href="#" class="btn-border btn-border-green mr-16 btn-video"><svg class="sprite fill-green mr-8" width="24" height="24">
 				<use xlink:href="/img/sprite/sprite.svg#video"></use>
 			</svg>Веб-камера</a>
 			<a href="#" class="btn btn-orange js-open" data-attr=".popup__book">Бронювати</a>
@@ -213,9 +236,11 @@
 	</div>
 </div>
 
-<div class="up">Нагору<svg class="sprite" width="10" height="10">
-	<use xlink:href="/img/sprite/sprite.svg#arrow_up"></use>
-</svg></div>
+<div class="up">
+	<svg class="sprite fill-grey" width="24" height="24">
+		<use xlink:href="/img/sprite/sprite.svg#ad"></use>
+	</svg>
+</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 			<script src="/js/script.js"></script>
 		</div>

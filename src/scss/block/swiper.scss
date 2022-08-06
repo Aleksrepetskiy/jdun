@@ -2,11 +2,12 @@
 
 .main-swiper{
 	width: 100%;
-	height: 302px;
-	margin-top: 16px;
+	height: 374px;
+	margin-bottom: 16px;
+	margin-top: auto;
+	border-radius: 12px;
 	@include phone {
 		height: 100%;
-		background-color: $dark_blue;
 	}
 	.ul {
 		margin-bottom: 0;
@@ -20,32 +21,6 @@
 	}
 	.ul .li, .ol .li {
 		margin-bottom: 4px;
-	}
-
-	&__text {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		width: 522px;
-		background-color: $dark_blue;
-		color: #fff;
-		padding: 50px;
-		font-size: 18px;
-		line-height: 140%;
-		display: flex;
-		flex-direction: column;
-		@include tablet {
-			width: 50%;
-			padding: 24px 24px 40px 24px;
-			font-size: 16px;
-		}
-		@include phone {
-			padding: 24px 24px 40px 24px;
-			font-size: 16px;
-			position: relative;
-			width: 100%;
-		}
 	}
 	&__box-img {
 		width: 100%;
@@ -81,19 +56,12 @@
 	.swiper-pagination-bullet-active {
 		background: $yellow;
 	}
-}
-
-.swiper-slide-bg {
-	background-position-x: left !important;
-	background-size: 63% !important;
-	@media (min-width: 768px) {
-		background-position-x: left !important;
-		background-size: 63% !important;
-	}
-}
-.swiper-slide-bg {
-	@include phone {
-		background-position-y: top !important;
-		background-size: 100% !important;
+	.swiper-button-next,
+	.swiper-button-prev {
+		width: 56px;
+		height: 56px;
+		background: #FFFFFF;
+		border: 1px solid #F8F8F8;
+		border-radius: 50%;
 	}
 }

@@ -20,9 +20,12 @@ body {
 	flex: 1 0 auto;
 }
 .wrapper {
-	max-width: 1484px;
+	max-width: 1488px;
 	padding: 0 24px;
 	margin: 0 auto;
+	@include phoneES {
+		padding: 0 12px;
+	}
 }
 .bold {
 	font-weight: 600;
@@ -39,7 +42,7 @@ h1, .h1 {
 	font-family: $PD;
 	margin-bottom: 32px;
 	@include tablet {
-		font-size: 30px;
+		font-size: 38px;
 	}
 }
 h2, .h2 {
@@ -52,18 +55,13 @@ h2, .h2 {
 	}
 }
 h3, .h3 {
-	font-size: 24px;
+	font-size: 22px;
 	line-height: 1.2em;
-	font-family: $PD;
-	margin-bottom: 10px;
+	font-weight: 700;
+	margin-bottom: 12px;
 	@include tablet {
 		font-size: 20px;
 	}
-}
-h4, .h4 {
-	font-size: 18px;
-	line-height: 1.2em;
-	font-family: $PD;
 }
 p {
 	margin-bottom: 24px;
@@ -81,6 +79,9 @@ p {
 .text-center {
 	text-align: center;
 }
+.fs-64 {
+	font-size: 64px;
+}
 .fs-30 {
 	font-size: 30px;
 }
@@ -92,6 +93,12 @@ p {
 }
 .fs-12 {
 	font-size: 12px;
+}
+.lh-12{
+	line-height: 1.2em;
+}
+.lh-16{
+	line-height: 1.6em;
 }
 .radius{
 	border-radius: 12px;
@@ -192,6 +199,13 @@ margin-top: 16px;
 .fill-white {
 	fill: #FFFFFF;
 }
+.color-orange {
+	color: #F95738;
+}
+
+.fill-orange {
+	fill: #F95738;
+}
 .sprite {
 	display: block
 }
@@ -202,7 +216,7 @@ margin-top: 16px;
 	bottom: 24px;
 	opacity: 0.8;
 	display: inline-flex;
-	padding: 12px 24px;
+	padding: 12px 12px;
 	text-transform: uppercase;
 	font-size: 14px;
 	align-items: center;
@@ -212,10 +226,7 @@ margin-top: 16px;
 	box-shadow: 0px 0px 2px rgba(84, 94, 144, 0.12), 0px 2px 6px rgba(84, 94, 144, 0.1);
 	border-radius: 4px;
 	z-index: 1;
-	.sprite {
-		fill: $dark_blue;
-		margin-left: 8px;
-	}
+	transform: rotate(180deg);
 }
 .show {
 	display: block;
@@ -278,13 +289,8 @@ margin-top: 16px;
 @import "block/footer.scss";
 @import "block/popup.scss";
 @import "block/swiper.scss";
-@import "block/news.scss";
 @import "block/index.scss";
-@import "block/table.scss";
 @import "block/breadcrumbs.scss";
 @import "block/share.scss";
-@import "block/members.scss";
 @import "block/map.scss";
 @import "block/pagination.scss";
-@import "block/materials.scss";
-@import "block/monitoring.scss";

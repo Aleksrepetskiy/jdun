@@ -19,9 +19,9 @@ $grey: #F7F6FB;
 // Breakpoints
 
 @mixin desktopHD {
-    @media (min-width: 1201px){
-        @content;
-  	}
+	@media (max-width: 1340px) {
+		@content;
+	}
 }
 @mixin desktop {
     @media (max-width: 1199px){
@@ -39,7 +39,7 @@ $grey: #F7F6FB;
   	}
 }
 @mixin phoneES {
-    @media (max-width: 479px){
+    @media (max-width: 427px){
         @content;
   	}
 }

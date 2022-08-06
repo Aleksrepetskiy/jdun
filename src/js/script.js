@@ -25,10 +25,9 @@ window.addEventListener("DOMContentLoaded", () => {
     //меню
 
     $(window).resize(function () {
-        if ($(window).width() > 767) {
+        if ($(window).width() > 1340) {
             $(".menu__item").removeClass("opened");
             $(".menu__box").removeClass("active");
-            $(".sub-menu__list").attr("style", "");
             $("html").removeClass("html-over");
         }
     });
@@ -50,17 +49,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 closeModal();
             }
         });
-    });
-
-    //о нас открытие на моб версии
-
-    $(".js-more").on("click", function (e) {
-        e.preventDefault();
-        $(this)
-            .closest(".js-show")
-            .find(".about__container")
-            .removeClass("active");
-        $(this).hide();
     });
 
     //faq
@@ -103,19 +91,6 @@ window.addEventListener("DOMContentLoaded", () => {
         );
     });
 
-    //READ-MORE
-    try {
-        const readMoreContent = document.querySelector(".read-more__content"),
-            readMoreBtn = document.querySelector(".read-more__btn"),
-            readMoreBtnBox = document.querySelector(".read-more__btn-box");
-        if (readMoreBtn) {
-            readMoreBtn.addEventListener("click", (e) => {
-                e.preventDefault();
-                readMoreBtnBox.remove();
-                readMoreContent.classList.remove("read-more__hide");
-            });
-        }
-    } catch (error) {}
 
     //TABS
     try {
@@ -159,49 +134,13 @@ window.addEventListener("DOMContentLoaded", () => {
         const swiper = new Swiper(".main-swiper", {
             // Optional parameters
             loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: true,
-                pauseOnMouseEnter: true,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
             keyboard: {
                 enabled: true,
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-
-        const tableSwiper = new Swiper(".table-swiper", {
-            // Optional parameters
-            loop: false,
-            spaceBetween: 30,
-            keyboard: {
-                enabled: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                // when window width is <= 499px
-                499: {
-                    slidesPerView: 1,
-                    spaceBetweenSlides: 50,
-                },
-                // when window width is <= 999px
-                999: {
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                },
-            },
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
         });
 
         const materialsSwiper = new Swiper(".materials-swiper", {
