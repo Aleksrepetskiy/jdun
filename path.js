@@ -20,6 +20,7 @@ module.exports = {
 	},
 	js: {
 		src: [pathSrc + "/js/script.js",
+		pathSrc + "/libs/gallery/lightgallery.js"
 		],
 		watch: pathSrc + "/js/**/*.js",
 		dist: pathDist + "/js/"

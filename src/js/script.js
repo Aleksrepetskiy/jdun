@@ -95,8 +95,8 @@ window.addEventListener("DOMContentLoaded", () => {
             tabs[position].classList.add("active");
         }
         tabsList.addEventListener("click", function (e) {
-			const target = e.target;
-            if (target.classList.contains('tab')) {
+            const target = e.target;
+            if (target.classList.contains("tab")) {
                 tabs.forEach((item, num) => {
                     if (item == target) {
                         hideTabContents();
@@ -136,48 +136,72 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     } catch (error) {}
 
-    $("#restaurant")
-        .justifiedGallery({
-            captions: false,
-            rowHeight: 240,
-            margins: 8,
-        })
-        .on("jg.complete", function () {
-            window.lightGallery(document.getElementById("restaurant"), {
-                showCloseIcon: true,
+    try {
+        $("#restaurant")
+            .justifiedGallery({
+                captions: false,
+                rowHeight: 240,
+                margins: 8,
+            })
+            .on("jg.complete", function () {
+                window.lightGallery(document.getElementById("restaurant"), {
+                    showCloseIcon: true,
+                });
             });
-        });
-    $("#bar")
-        .justifiedGallery({
-            captions: false,
-            rowHeight: 240,
-            margins: 8,
-        })
-        .on("jg.complete", function () {
-            window.lightGallery(document.getElementById("restaurant"), {
-                showCloseIcon: true,
+        $("#bar")
+            .justifiedGallery({
+                captions: false,
+                rowHeight: 240,
+                margins: 8,
+            })
+            .on("jg.complete", function () {
+                window.lightGallery(document.getElementById("bar"), {
+                    showCloseIcon: true,
+                });
             });
-        });
-    $("#territory")
-        .justifiedGallery({
-            captions: false,
-            rowHeight: 240,
-            margins: 8,
-        })
-        .on("jg.complete", function () {
-            window.lightGallery(document.getElementById("restaurant"), {
-                showCloseIcon: true,
+        $("#territory")
+            .justifiedGallery({
+                captions: false,
+                rowHeight: 240,
+                margins: 8,
+            })
+            .on("jg.complete", function () {
+                window.lightGallery(document.getElementById("territory"), {
+                    showCloseIcon: true,
+                });
             });
-        });
-    $("#washed")
-        .justifiedGallery({
-            captions: false,
-            rowHeight: 240,
-            margins: 8,
-        })
-        .on("jg.complete", function () {
-            window.lightGallery(document.getElementById("restaurant"), {
-                showCloseIcon: true,
+        $("#people")
+            .justifiedGallery({
+                captions: false,
+                rowHeight: 240,
+                margins: 8,
+            })
+            .on("jg.complete", function () {
+                window.lightGallery(document.getElementById("people"), {
+                    showCloseIcon: true,
+                });
             });
-        });
+        $("#forest")
+            .justifiedGallery({
+                captions: false,
+                rowHeight: 240,
+                margins: 8,
+            })
+            .on("jg.complete", function () {
+                window.lightGallery(document.getElementById("forest"), {
+                    showCloseIcon: true,
+                });
+            });
+        $("#washed")
+            .justifiedGallery({
+                captions: false,
+                rowHeight: 240,
+                margins: 8,
+            })
+            .on("jg.complete", function () {
+                window.lightGallery(document.getElementById("washed"), {
+                    showCloseIcon: true,
+                });
+            });
+    } catch (error) {}
 });

@@ -297,6 +297,10 @@ margin-top: 16px;
 	padding: 0 16px;
 }
 
+.lg-outer .lg-object {
+	border-radius: 12px;
+}
+
 @import "block/forms.scss";
 @import "block/header.scss";
 @import "block/footer.scss";
