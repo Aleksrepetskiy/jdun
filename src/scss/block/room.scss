@@ -1,0 +1,64 @@
+.room {
+	padding-top: 32px;
+	padding-bottom: 80px;
+	&__title {
+		font-size: 32px;
+		font-weight: 700;
+		margin-bottom: 4px;
+		line-height: 1.2em;
+	}
+	&__item {
+		padding: 40px 60px 62px 60px;
+		background-color: #fff;
+		border: 1px solid #E0E0E0;
+		border-radius: 12px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 56px;
+		@include tablet {
+			padding: 16px 16px 32px 16px;
+			grid-gap: 16px;
+		}
+		@include phone {
+			grid-template-columns: 1fr;
+		}
+		&+& {
+			margin-top: 32px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 1.6em;
+			margin-bottom: 8px;
+		}
+	}
+	&__slider {
+		position: relative;
+		overflow: hidden;
+	}
+	&-swiper {
+		overflow: hidden;
+		border-radius: 12px;
+	}
+	&-swiper-container {
+		position: relative;
+		padding-bottom: 36px;
+	}
+	&__num {
+		display: inline-flex;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		padding: 8px 10px;
+		background: #FFFFFF;
+		border: 1px solid #000000;
+		border-radius: 4px;
+	}
+	.index-rooms__move {
+		margin-bottom: 0;
+		margin-top: 16px;
+	}
+
+	.swiper-prewiev {
+		display: none;
+	}
+}

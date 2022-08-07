@@ -15,6 +15,7 @@ body {
 	min-width: 360px;
 	display: flex;
 	flex-direction: column;
+	background-color: #F5F5F5;
 }
 .main {
 	flex: 1 0 auto;
@@ -79,11 +80,20 @@ p {
 .text-center {
 	text-align: center;
 }
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
 .fs-64 {
 	font-size: 64px;
 }
 .fs-30 {
 	font-size: 30px;
+}
+.fs-32 {
+	font-size: 32px;
 }
 .fs-18 {
 	font-size: 18px;
@@ -109,6 +119,9 @@ p {
 .m-auto {
 	margin-left: auto;
 	margin-right: auto;
+}
+.ml-auto {
+	margin-left: auto;
 }
 .mb-0 {
 	margin-bottom: 0;
@@ -239,17 +252,17 @@ margin-top: 16px;
 	animation-duration: 1.5s;
 }
 .box-grey {
-	background: #F7F6FB;
-	padding: 40px 0;
-	@include phone {
-		margin-left: -16px;
-		margin-right: -16px;
+	background: #F8F8F8;
+	padding: 40px 82px;
+	border-radius: 12px;
+	&+& {
+		margin-top: 4px;
 	}
-	&__wrapper {
-		max-width: 1064px;
-		margin: 0 auto;
-		padding: 0 16px
-
+	@include desktop {
+		padding: 20px 41px;
+	}
+	@include desktop {
+		padding: 20px 16px;
 	}
 }
 .box-grey-small {
@@ -290,7 +303,13 @@ margin-top: 16px;
 @import "block/popup.scss";
 @import "block/swiper.scss";
 @import "block/index.scss";
+@import "block/headline.scss";
+@import "block/room.scss";
 @import "block/breadcrumbs.scss";
 @import "block/share.scss";
 @import "block/map.scss";
 @import "block/pagination.scss";
+@import "block/restaurant.scss";
+@import "block/gallery.scss";
+@import "block/contact.scss";
+@import "block/tabs.scss";

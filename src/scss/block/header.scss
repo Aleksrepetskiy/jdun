@@ -118,7 +118,7 @@
 			}
 			@include desktopHD {
 				margin-left: 0;
-			}			
+			}
 		}
 		@include desktopHD {
 			border-bottom: 1px solid rgba(140, 198, 191, 0.4);
@@ -131,8 +131,8 @@
 		cursor: pointer;
 		transition: all 0.2s ease;
 
-		&:hover {
-			color: #062A30;
+		&:hover, &.active {
+			color: #8CC6BF;
 		}
 	}
 

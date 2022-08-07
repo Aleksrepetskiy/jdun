@@ -1,18 +1,18 @@
 .breadcrumbs {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 
     .sprite {
-        fill: #B3B8D5;
+        fill: #fff;
     }
 
     &__list {
         display: flex;
         align-items: center;
-        padding: 13px 0;
 		white-space: nowrap;
 		overflow-x: auto;
 		scrollbar-width: none;
 		min-width: auto;
+		padding: 5px 0;
 		&::-webkit-scrollbar {
 			-webkit-appearance: none;
 			height: 0;
@@ -24,40 +24,29 @@
     &__item {
         font-size: 14px;
         line-height: 1em;
-        color: #B3B8D5;
+        color: #8CC6BF;
         position: relative;
 
-        &:first-child {
-            .breadcrumbs__link {
-                display: flex;
-				align-items: center;
-            }
-			.sprite {
-				margin-right: 4px;
-			}
-        }
-
         &+& {
-            padding-left: 20px;
+            padding-left:32px;
 
             &:before {
                 content: "";
                 display: block;
-                width: 10px;
-                height: 10px;
+                width: 24px;
+                height: 24px;
                 position: absolute;
                 top: 50%;
-                margin-top: -5px;
+                margin-top: -12px;
                 left: 4px;
-                background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDggMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wLjU5MDA4OCAxMS4zNEw1LjE3MDA5IDYuNzVMMC41OTAwODggMi4xNkwyLjAwMDA5IDAuNzVMOC4wMDAwOSA2Ljc1TDIuMDAwMDkgMTIuNzVMMC41OTAwODggMTEuMzRaIiBmaWxsPSIjQjNCOEQ1Ii8+Cjwvc3ZnPgo=);
+				background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgNkwxNSAxMkw5IDE4IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8L3N2Zz4K);
                 background-repeat: no-repeat;
                 background-position: center;
             }
         }
     }
-
     &__link {
-        color: #B3B8D5;
+        color: #fff;
         display: block;
     }
 }

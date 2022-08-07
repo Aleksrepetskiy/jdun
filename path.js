@@ -20,8 +20,6 @@ module.exports = {
 	},
 	js: {
 		src: [pathSrc + "/js/script.js",
-			pathSrc + "/js/index.js",
-			pathSrc + "/js/tabs.js",
 		],
 		watch: pathSrc + "/js/**/*.js",
 		dist: pathDist + "/js/"
@@ -35,7 +33,5 @@ module.exports = {
 		src: pathSrc + "/img/sprite/*.svg",
 		watch: pathSrc + "/img/sprite/*.svg",
 		dist: pathDist + "/img/sprite/"
-
 	}
-
 }

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ua-Ua">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ждун</title>
+	<!--FONTS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+		rel="stylesheet">
+	<!--CSS-->
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/css/style.min.css" />
+</head>
+
+<body>
+	@@include('includes/header.html')
+	<main class="main">
+		<div class="headline" style="background-image: url(./img/bg-index.jpeg);">
+			<div class="wrapper">
+				@@include('includes/breadcrumbs.html')
+				<h1>Номери</h1>
+			</div>
+		</div>
+		<div class="room">
+			<div class="wrapper">
+				<div class="room__item">
+					<div class="room__slider">
+						<div class="room-swiper-container">
+							<div class="swiper room-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide1.jpg" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide2.jpg" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide3.jpg" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide4.jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="room__info">
+						<div class="room__title">Номер з каміном</div>
+						<div class="mb-8">4 - 7 гостей · 3 кімнати · 2 спальні</div>
+						<div class="mb-32">
+							<div class="room__num">№ 1</div>
+							<div class="room__num">№ 2</div>
+						</div>
+						<div class="index-rooms__shilds">
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#fireplace"></use>
+								</svg>
+								Камін
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#balcony"></use>
+								</svg>
+								Балкон
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#bed"></use>
+								</svg>
+								Двоспальне ліжко х 2
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#sofa"></use>
+								</svg>
+								Диван х 3
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#bathroom"></use>
+								</svg>
+								Ванна кімната
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#tv"></use>
+								</svg>
+								Телевізор
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#fridge"></use>
+								</svg>
+								Холодильник
+							</div>
+						</div>
+						<div>
+							<p>
+								Це комфортабельний номер люкс, великої площі з гарною обстановкою. Зроблено ремонт у 2018 році.
+							</p>
+							<p>Номер складається з камінного залу і двох спалень.</p>
+							<p class="weight-700">· Камінний зал</p>
+							<p>розкладний диван, камін, телевізор</p>
+							<p class="weight-700">· Спальня</p>
+							<p>двоспальне ліжко, диван, телевізор, шафа для одягу</p>
+							<p class="weight-700">· Спальня</p>
+							<p>двоспальне ліжко, диван, телевізор, шафа для одягу</p>
+							<p class="weight-700">· Хол</p>
+							<p>холодильник, столовий посуд, електрочайник</p>
+							<p class="weight-700">· Санвузол</p>
+							<p>душ, умивальник, туалет, фен, рушникі (2 на особу)</p>
+						</div>
+						<div class="index-rooms__move">
+							<div class="flex">
+								<svg class="sprite fill-db mr-16" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#ticket"></use>
+								</svg>
+								<span class="weight-700 fs-24">1 700 ₴</span>
+								<span class="fs-14 ml-2">/ніч</span>
+							</div>
+							<a href="#" class="btn btn-orange js-open" data-attr=".popup__book">Бронювати</a>
+						</div>
+					</div>
+				</div>
+				<div class="room__item">
+					<div class="room__slider">
+						<div class="room-swiper-container">
+							<div class="swiper room-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide1.jpg" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide2.jpg" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide3.jpg" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-swiper__box-img">
+											<img src="/img/slider/slide4.jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="room__info">
+						<div class="room__title">Номер з каміном</div>
+						<div class="mb-8">4 - 7 гостей · 3 кімнати · 2 спальні</div>
+						<div class="mb-32">
+							<div class="room__num">№ 1</div>
+							<div class="room__num">№ 2</div>
+						</div>
+						<div class="index-rooms__shilds">
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#fireplace"></use>
+								</svg>
+								Камін
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#balcony"></use>
+								</svg>
+								Балкон
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#bed"></use>
+								</svg>
+								Двоспальне ліжко х 2
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#sofa"></use>
+								</svg>
+								Диван х 3
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#bathroom"></use>
+								</svg>
+								Ванна кімната
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#tv"></use>
+								</svg>
+								Телевізор
+							</div>
+							<div class="shild">
+								<svg class="sprite fill-db mr-8" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#fridge"></use>
+								</svg>
+								Холодильник
+							</div>
+						</div>
+						<div>
+							<p>
+								Це комфортабельний номер люкс, великої площі з гарною обстановкою. Зроблено ремонт у 2018 році.
+							</p>
+							<p>Номер складається з камінного залу і двох спалень.</p>
+							<p class="weight-700">· Камінний зал</p>
+							<p>розкладний диван, камін, телевізор</p>
+							<p class="weight-700">· Спальня</p>
+							<p>двоспальне ліжко, диван, телевізор, шафа для одягу</p>
+							<p class="weight-700">· Спальня</p>
+							<p>двоспальне ліжко, диван, телевізор, шафа для одягу</p>
+							<p class="weight-700">· Хол</p>
+							<p>холодильник, столовий посуд, електрочайник</p>
+							<p class="weight-700">· Санвузол</p>
+							<p>душ, умивальник, туалет, фен, рушникі (2 на особу)</p>
+						</div>
+						<div class="index-rooms__move">
+							<div class="flex">
+								<svg class="sprite fill-db mr-16" width="24" height="24">
+									<use xlink:href="/img/sprite/sprite.svg#ticket"></use>
+								</svg>
+								<span class="weight-700 fs-24">1 700 ₴</span>
+								<span class="fs-14 ml-2">/ніч</span>
+							</div>
+							<a href="#" class="btn btn-orange js-open" data-attr=".popup__book">Бронювати</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	@@include('includes/footer.html')
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>

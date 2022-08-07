@@ -1,18 +1,28 @@
-.contact {
-	&__inner {
-		background-color: #fff;
-		max-width: 1030px;
-		margin: 0 auto;
-		padding: 24px;
+.map {
+	color: #fff;
+	padding: 200px 0 80px 0;
+	@include phone {
+		padding: 180px 0 40px 0;
 	}
-	&__adress {
+	&__list {
 		display: flex;
-		align-items: center;
-		.sprite {
-			margin-right: 8px;
+		gap: 64px;
+		align-items: flex-start;
+		margin-bottom: 32px;
+		@include phone {
+			flex-wrap: wrap;
+			margin-bottom: 16px;
+			gap: 32px;
 		}
 	}
-	.footer__contact {
-		margin-bottom: 40px;
+	&__item {
+		padding: 24px;
+		@include phone {
+			padding: 12px;
+		}
+	}
+	&__google {
+		border-radius: 12px;
+		overflow: hidden;
 	}
 }
