@@ -68,6 +68,11 @@ p {
 	margin-bottom: 24px;
 
 }
+.sprite {
+	display: block;
+	fill: $default_color;
+	flex-shrink: 0;
+}
 .w-full {
 	width: 100%;
 }
@@ -156,6 +161,9 @@ margin-top: 16px;
 .mt-24 {
 	margin-top: 24px;
 }
+.mb-20 {
+	margin-bottom: 20px;
+}
 .mb-24 {
 	margin-bottom: 24px;
 }
@@ -219,9 +227,7 @@ margin-top: 16px;
 .fill-orange {
 	fill: #F95738;
 }
-.sprite {
-	display: block
-}
+
 .up {
 	position: fixed;
 	cursor: pointer;
@@ -317,3 +323,5 @@ margin-top: 16px;
 @import "block/gallery.scss";
 @import "block/contact.scss";
 @import "block/tabs.scss";
+@import "block/services.scss";
+@import "block/excursions.scss";

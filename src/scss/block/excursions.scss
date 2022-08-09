@@ -1,0 +1,61 @@
+.excursions {
+	padding: 40px 0 80px;
+	&__list {
+		display: grid;
+		grid-gap: 40px;
+		grid-template-columns: 1fr;
+	}
+	&__item {
+		background-color: #fff;
+		border-radius: 12px;
+		overflow: hidden;
+		&-main {
+			display: grid;
+			grid-gap: 40px;
+			grid-template-columns: 1fr 1fr;
+			@include tablet {
+				grid-template-columns: 1fr;
+			}
+		}
+		&-four {
+			display: grid;
+			grid-gap: 40px;
+			grid-template-columns: 1fr 1fr;
+			@include phoneES {
+				grid-template-columns: 1fr;
+			}
+		}
+		&-all {
+			display: grid;
+			grid-gap: 40px;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			@include tablet {
+				grid-template-columns: 1fr 1fr;
+			}
+			@include phoneES {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	&__img-box {
+		position: relative;
+		padding-bottom: 60%;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__footer {
+		padding: 16px 16px 38px;
+	}
+	&__title {
+		font-weight: 700;
+	}
+	&__desc {
+		font-size: 14px;
+	}
+}

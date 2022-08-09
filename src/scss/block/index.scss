@@ -144,6 +144,12 @@
 	align-items: center;
 	padding: 4px 10px;
 	font-size: 14px;
+	&--green {
+		background: #8CC6BF;
+		font-size: 16px;
+		line-height: 160%;
+		color: #FFFFFF;
+	}
 }
 
 .index-tile {
