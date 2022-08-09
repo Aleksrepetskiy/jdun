@@ -248,14 +248,6 @@ p.help-block-error {
     font-size: 14px;
 }
 
-
-.c-checkbox {
-    margin-bottom: 16px;
-    min-height: 24px;
-
-
-}
-
 .b-checkbox {
     position: relative;
 
@@ -413,4 +405,75 @@ p.help-block-error {
 .btn-orange {
     background: #F95738;
     color: #fff;
+}
+
+.label-room {
+	display: flex;
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #E6E6E6;
+	border-radius: 12px;
+	padding: 16px;
+	&__img {
+		position: relative;
+		width: 84px;
+		height: 84px;
+		border-radius: 12px;
+		overflow: hidden;
+		margin-right: 16px;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__price {
+		margin-left: auto;
+		align-self: flex-end;
+		flex-shrink: 0;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		width: 30px;
+		height: 30px;
+		border-radius: 8px;
+		border: 1px solid #F95738;
+		transition: 0.2s;
+	}
+}
+
+.b-checkbox input:checked+.label-room {
+	border-color: #F95738;
+}
+.b-checkbox input:checked+.label-room:after {
+    content: "";
+    background-color: #F95738;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxNiAxNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTYgMTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTE0LjYsMy4yYzAuMywwLjMsMC4zLDAuOCwwLDEuMWwtNy42LDcuNWMtMC4zLDAuMy0wLjgsMC4zLTEuMSwwTDIuMiw4LjFDMS45LDcuOCwxLjksNy4zLDIuMiw3CglDMi41LDYuNywzLDYuNywzLjMsN2wzLjIsMy4ybDctN0MxMy44LDIuOSwxNC4zLDIuOSwxNC42LDMuMnoiLz4KPC9zdmc+Cg==);
+	background-position: center;
+	background-size: 70%;
+	background-repeat: no-repeat;
+    position: absolute;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    top: 16px;
+    right: 16px;
+    transition: all 0.1s linear;
+	border: 1px solid transparent;
+}
+
+.box-grey__form-room {
+	display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
 }
