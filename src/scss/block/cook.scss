@@ -1,0 +1,52 @@
+.cook {
+	padding: 32px 0 80px;
+	background-color: #fff;
+	.wrapper {
+		max-width: 980px;
+	}
+	&__tabs {
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 0 24px;
+		@include tablet {
+			padding: 0 0 0 24px;
+			.tabs {
+				border-radius: 22px 0 0 22px;
+			}
+		}
+		@include phoneES {
+			padding: 0 0 0 12px;
+		}
+
+
+	}
+	&__item {
+		margin-top: 32px;
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		font-weight: 700;
+		&::before {
+			content: '';
+			border-bottom: 1px dotted #DDE3EA;
+			flex-grow: 1;
+			order: 2;
+			margin: 0 5px;
+		}
+	}
+	&__price {
+		order: 3;
+	}
+	&__weight {
+		font-weight: normal;
+		color: #838E9B;
+		display: inline-block;
+		margin-left: 8px;
+	}
+	.tabs {
+		@include tablet {
+
+		}
+	}
+}
